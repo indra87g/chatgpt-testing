@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="简洁而强大的ChatGPT应用">
     <meta name="theme-color" content="#edeff2">
     <meta name="apple-mobile-web-app-status-bar-style" content="#edeff2">
     <meta name="msapplication-TileColor" content="#edeff2">
@@ -3075,7 +3074,7 @@
         }
     </script>
     <script>
-        const localeList = ["en", "zh"];
+        const localeList = ["en", "id"];
         let locale; // UI语言
         const setLangEle = document.getElementById("setLang");
         const setLang = () => {
@@ -3092,7 +3091,7 @@
             }
         }
         const initLang = () => {
-            let localLang = localStorage.getItem("UILang") || (navigator.language.startsWith("zh-") ? "zh" : "en");
+            let localLang = localStorage.getItem("UILang") || (navigator.language.startsWith("id-") ? "id" : "en");
             let isInit = locale === void 0;
             if (locale !== localLang) {
                 locale = localLang;
@@ -3256,16 +3255,16 @@
                 "cantSpeechTip": "Current voice cannot synthesize this message, please choose another voice or message!",
                 "localQuotaExceedTip": "Local storage exceeded limit, please export chats data and clear or delete some chats!",
             },
-            "zh": {
-                "description": "简洁而强大的ChatGPT应用",
-                "newChat": "新建会话",
-                "newChatName": "新的会话",
-                "newFolder": "新建文件夹",
-                "newFolderName": "新文件夹",
-                "search": "搜索",
+            "id": {
+                "description": "ChatGPT Test",
+                "newChat": "Percakapan baru",
+                "newChatName": "Percakapan baru",
+                "newFolder": "Folder baru",
+                "newFolderName": "Folder baru",
+                "search": "Cari",
                 "matchCaseTip": "区分大小写",
                 "forceRe": "强制刷新",
-                "clearAll": "清空全部",
+                "clearAll": "Hapus semua",
                 "setting": "设置",
                 "nav": "导航",
                 "winedWin": "窗口",
@@ -3274,13 +3273,13 @@
                 "chat": "会话",
                 "tts": "语音合成",
                 "stt": "语音识别",
-                "gptModel": "GPT模型",
-                "gptBrowsing": "GPT-4-联网",
+                "gptModel": "Model ",
+                "gptBrowsing": "GPT-4",
                 "avatar": "用户头像",
                 "systemRole": "系统角色",
                 "presetRole": "预设角色",
                 "default": "默认",
-                "assistant": "助手",
+                "assistant": "Asisten",
                 "cat": "猫娘",
                 "emoji": "表情",
                 "withImg": "有图",
